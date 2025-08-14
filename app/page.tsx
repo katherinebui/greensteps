@@ -1,103 +1,62 @@
-import Image from "next/image";
+/**
+ * 🏠 HOME PAGE COMPONENT
+ * 
+ * 
+ * Key React/Next.js Concepts:
+ * - export default: Makes this the main component for this route
+ * - JSX: The HTML-like syntax inside the return statement
+ * - className: React's way of setting CSS classes (instead of "class")
+ * - Tailwind CSS: The utility classes like "space-y-4", "text-xl", etc.
+ */
 
 export default function Home() {
+  // 🎯 REACT COMPONENT: A function that returns JSX
+  // This function gets called every time the component needs to render
+  
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    // 📦 JSX: JavaScript XML - allows us to write HTML-like code in JavaScript
+    // The return statement must contain exactly one parent element
+    <div className="h-full w-full bg-gradient-to-br from-pastel-green to-mint-green flex items-center justify-center p-2 sm:p-4">
+      {/* 🎨 TAILWIND CSS CLASSES:
+          - h-full w-full: Makes the container full height and width
+          - bg-gradient-to-br: Creates a gradient background from top-left to bottom-right
+          - from-pastel-green to-mint-green: Uses our custom green pastel colors
+          - flex items-center justify-center: Centers content both vertically and horizontally
+          - p-2 sm:p-4: Responsive padding - smaller on mobile, larger on desktop */}
+      
+      <div className="w-full max-w-xs sm:max-w-sm mx-auto text-center space-y-2 sm:space-y-3">
+        <h1 className="text-xl sm:text-2xl font-bold text-forest-green">
+          🌱 Welcome to GreenSteps
+        </h1>
+        
+        {/* 📝 PARAGRAPH: Regular HTML element with Tailwind styling */}
+        <p className="text-xs sm:text-sm text-forest-green leading-relaxed px-1">
+          Take a quick lifestyle quiz to estimate your carbon footprint and get AI-powered tips for a more sustainable future.
+        </p>
+        
+        {/* 🔗 ANCHOR TAG: Links to another page in our app
+            - href="/quiz": Next.js will handle this as a client-side navigation
+            - className: Multiple Tailwind classes for styling with our green theme
+            - hover:bg-sage-green: Changes background color on hover to darker sage green */}
+        <a 
+          href="/quiz" 
+          className="inline-flex items-center justify-center rounded-lg bg-sage-green px-3 sm:px-4 py-2 text-white font-semibold text-xs sm:text-sm shadow-lg hover:bg-sage-green/90 transition-all duration-300 transform hover:scale-105"
+        >
+          🌿 Start the Quiz
+        </a>
+        
+        {/* 🌍 Additional info section */}
+        <div className="mt-2 sm:mt-3 p-2 sm:p-3 bg-white/80 rounded-lg border border-pastel-green">
+          <h2 className="text-xs sm:text-sm font-semibold text-forest-green mb-1">
+            🌍 Why Calculate Your Footprint?
+          </h2>
+          <p className="text-xs text-forest-green">
+            Understanding your environmental impact is the first step toward making positive changes. 
+            Our AI-powered recommendations help you reduce your carbon footprint with personalized, 
+            actionable advice.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
