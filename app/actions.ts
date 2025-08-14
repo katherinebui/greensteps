@@ -94,8 +94,8 @@ export async function processQuizAction(
       flightsShortHaulPerYear: parsed.data.flightsShortHaulPerYear,
     });
     estimate = { kg: result.kgCO2ePerYear, breakdown: result.breakdown };
-  } catch {
-    // 🛡️ ERROR HANDLING: If carbon API fails, continue without estimate
+  } catch (error) {
+    console.error("Error estimating carbon:", error); // Log the error for debugging
     estimate = null;
   }
 
@@ -107,8 +107,8 @@ export async function processQuizAction(
       locationSummary, 
       carbonKgPerYear: estimate?.kg 
     });
-  } catch {
-    // 🛡️ ERROR HANDLING: If AI API fails, show fallback message
+  } catch (error) {
+    console.error("Error generating AI tips:", error); // Log the error for debugging
     tips = "Unable to generate AI tips at this time.";
   }
 
