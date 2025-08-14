@@ -88,10 +88,10 @@ export default function QuizPage() {
     <div className="h-full w-full bg-gradient-to-br from-pastel-green to-mint-green p-2 flex items-center justify-center">
       <div className="w-full max-w-sm mx-auto space-y-2">
         <div className="text-center">
-          <h1 className="text-lg font-bold text-forest-green mb-1">
+          <h1 className="text-lg font-bold text-sage-green mb-1">
             🌱 Lifestyle Quiz
           </h1>
-          <p className="text-xs text-forest-green">
+          <p className="text-xs text-sage-green">
             Help us understand your lifestyle to calculate your carbon footprint
           </p>
         </div>
