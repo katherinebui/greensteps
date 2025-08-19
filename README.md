@@ -3,6 +3,4 @@
  - Built with React, Typescript, Next,js, and Tailwind CSS
  - Asks a few questions and calls Carbon Interface API to calculate carbon footprint.
  - Retreives IP for location and calls OpenAI to generate tips 
-
-<img width="665" height="941" alt="Screenshot 2025-08-14 at 15 47 10" src="https://github.com/user-attachments/assets/bdcdce32-d56e-470f-a7d0-813686419faf" />
-<img width="528" height="986" alt="Screenshot 2025-08-14 at 15 55 29" src="https://github.com/user-attachments/assets/aa994cc5-2df7-4284-adc1-b6870361b150" />
+<img width="548" height="444" alt="Screenshot 2025-08-19 at 13 25 45" src="https://github.com/user-attachments/assets/7d9c48f4-e21b-46f3-adac-a4ad3f594802" />
