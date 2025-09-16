@@ -1,7 +1,8 @@
  🌱 Lifestyle Quiz: Help us understand your lifestyle to calculate your carbon footprint
 
  - Built with React, Typescript, Next.js, and Tailwind CSS
- - Asks a few questions and calls Carbon Interface API to calculate carbon footprint.
+ - Asks a few questions
+ - Calls Carbon Interface API to calculate carbon footprint
  - Retreives IP for location
  - Calls OpenAI to generate tips
 <img width="500" height="477" alt="Screenshot 2025-09-16 at 11 44 52" src="https://github.com/user-attachments/assets/c6f77f53-3b5a-41aa-a216-fbe0f22ec0f2" />
