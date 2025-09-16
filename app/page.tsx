@@ -16,7 +16,7 @@ export default function Home() {
   return (
     // 📦 JSX: JavaScript XML - allows us to write HTML-like code in JavaScript
     // The return statement must contain exactly one parent element
-    <div className="h-full w-full bg-gradient-to-br from-pastel-green to-mint-green flex items-center justify-center p-2 sm:p-4">
+    <div className="min-h-screen w-full bg-gradient-to-br from-pastel-green to-mint-green flex items-center justify-center p-2 sm:p-4">
       {/* 🎨 TAILWIND CSS CLASSES:
           - h-full w-full: Makes the container full height and width
           - bg-gradient-to-br: Creates a gradient background from top-left to bottom-right
@@ -25,12 +25,12 @@ export default function Home() {
           - p-2 sm:p-4: Responsive padding - smaller on mobile, larger on desktop */}
       
       <div className="w-full max-w-xs sm:max-w-sm mx-auto text-center space-y-2 sm:space-y-3">
-        <h1 className="text-xl sm:text-2xl font-bold text-forest-green">
+        <h1 className="text-xl sm:text-2xl font-bold text-sage-green">
           🌱 Welcome to GreenSteps
         </h1>
         
         {/* 📝 PARAGRAPH: Regular HTML element with Tailwind styling */}
-        <p className="text-xs sm:text-sm text-forest-green leading-relaxed px-1">
+        <p className="text-xs sm:text-sm text-sage-green leading-relaxed px-1">
           Take a quick lifestyle quiz to estimate your carbon footprint and get AI-powered tips for a more sustainable future.
         </p>
         
@@ -46,7 +46,7 @@ export default function Home() {
         </a>
         
         {/* 🌍 Additional info section */}
-        <div className="mt-2 sm:mt-3 p-2 sm:p-3 bg-white/80 rounded-lg border border-pastel-green">
+        <div className="mt-2 sm:mt-3 p-2 sm:p-3 bg-white rounded-lg border border-pastel-green">
           <h2 className="text-xs sm:text-sm font-semibold text-forest-green mb-1">
             🌍 Why Calculate Your Footprint?
           </h2>
